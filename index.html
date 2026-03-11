@@ -478,7 +478,7 @@ function showPhase(id){
 function runTitle(){
   showPhase('phase-title');
   ['tl1','tl2','tl3','tl4'].forEach((id,i)=>{
-    setTimeout(()=>document.getElementById(id).classList.add('show'), i*370+220);
+    setTimeout(()=>document.getElementById(id).classList.add('show'), i*700+220);
   });
   setTimeout(()=>{
     const p=document.getElementById('phase-title');
@@ -511,7 +511,7 @@ async function runLove(){
   const hIv=spawnHearts();
   setTimeout(()=>container.classList.add('show'),120);
   container.querySelectorAll('.photo-dot').forEach((d,i)=>{
-    setTimeout(()=>d.classList.add('show'),500+i*155);
+    setTimeout(()=>d.classList.add('show'),500+i*300);
   });
   setTimeout(()=>document.getElementById('loveLabel').classList.add('show'), 500+PHOTO_COUNT*155+320);
   setTimeout(()=>{
