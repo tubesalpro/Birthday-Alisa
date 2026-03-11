@@ -483,7 +483,7 @@ function runTitle(){
   setTimeout(()=>{
     const p=document.getElementById('phase-title');
     p.style.transition='opacity 1s ease'; p.style.opacity='0';
-    setTimeout(runLove,1200);
+    setTimeout(runLove,2000);
   }, 2900);
 }
 
@@ -535,7 +535,7 @@ document.getElementById('btnStart').addEventListener('click',()=>{
   m.volume=.5; m.play().catch(()=>{});
   const p=document.getElementById('phase-start');
   p.style.transition='opacity .75s ease'; p.style.opacity='0';
-  setTimeout(runTitle,850);
+  setTimeout(runTitle,1500);
 });
 </script>
 </body>
